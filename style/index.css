@@ -1,1 +1,240 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body {
+    font-family: Oxygen;
+}
+
+header {
+    width: 100%;
+    background-color: slategray;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    color: white;
+}
+
+.homebutton {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.homebutton:hover {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.aboutbutton {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.aboutbutton:hover {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.projectsbutton {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.projectsbutton:hover {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.contactbutton {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.contactbutton:hover {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.section1 {
+    width: 100%;
+    height: 30rem;
+    padding-top: 5rem;
+}
+.section1 img {
+    display: flex;
+    float: left;
+    border: 10px solid;
+    border-radius: 20px;
+    width: 45%;
+    height: 20rem;
+    margin-left: 5rem;
+}
+
+.maindiv {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.section1button {
+    background-color: olive;
+    border-radius: 10px;
+    padding: .8rem;
+    margin-bottom: .8rem;
+    font-size: 1.5rem;
+    font-family: Comfortaa;
+    color: white;
+    text-decoration: none;
+}
+
+.section1 p {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 65rem;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.pics {
+    padding: .8rem;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    font-size: 1.2rem;
+    background-color: slategray;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.footer a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+    body {
+        font-family: Oxygen;
+        font-size: .6rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .section1 {
+        flex-direction: column;
+    }
+
+    .maindiv {
+        margin: 2rem;
+    }
+    
+    .section1button {
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-family: Oxygen;
+        font-size: .4rem;
+    }
+
+    nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: .5rem;
+    }
+
+    .section1 {
+        flex-direction: column;
+    }
+
+    .maindiv {
+        margin: 6.5rem;
+    }
+    
+    .section1button {
+        margin: 3.5rem;
+    }
+}
